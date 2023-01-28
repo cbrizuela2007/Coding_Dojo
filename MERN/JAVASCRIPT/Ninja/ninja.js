@@ -19,6 +19,7 @@ class Ninja {
     }
 }
 
+
 const Ninja1 = new Ninja("Carlos",100);
 Ninja1.sayName();
 Ninja1.drinkSake();
