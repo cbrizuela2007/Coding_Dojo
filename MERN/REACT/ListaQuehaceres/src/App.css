@@ -32,18 +32,24 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.linea {
-  display: inline-block;
-}
-
-.tachar{
+.tachar {
   text-decoration: line-through;
 }
-.sintachar{
+
+.sintachar {
   text-decoration: none;
+}
+
+.Lista {
+  display: flex;
+  width: 40%;
+  /*text-align: left;*/
+  margin: 0 0 10px 30px;
+  justify-content: space-between;
 }

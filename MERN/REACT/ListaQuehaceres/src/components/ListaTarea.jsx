@@ -26,8 +26,8 @@ const ListaTarea = ({ listatareas, setListaTarea }) => {
   return (
     <>
       {listatareas.map((e, i) =>
-        <div key={i}>
-          <label className={e.status ? 'tachar' :' sintachar' }>{i}:{e.tarea}</label>
+        <div className="Lista" key={i}>
+          <label className={e.status ? 'tachar' :' sintachar' }>{i}- {e.tarea}</label>
           <input type="checkbox" onClick={() => seleccionar(i)} />
           <button onClick={()=> eliminar(i)}>Delete</button>
         </div>)}
