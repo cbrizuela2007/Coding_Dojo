@@ -1,4 +1,4 @@
-const ListaTarea = ({ listatareas, setListaTarea }) => {
+export const ListaTarea = ({ listatareas, setListaTarea }) => {
 
   /*setTarea(tarea: ["hule"])*/
   
@@ -35,4 +35,4 @@ const ListaTarea = ({ listatareas, setListaTarea }) => {
   )
 }
 
-export default ListaTarea
+/*export default ListaTarea*/
