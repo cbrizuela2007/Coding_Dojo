@@ -1,11 +1,15 @@
 const Informacion = ({ tabs }) => {
-  
-
-  
-  console.log(tabs[0].contenido,"info")
+  console.log(tabs)
   return (
     <>
-      <textarea name="" id="" cols="30" rows="10">{tabs[0].contenido}</textarea>
+      {tabs.map((e,i) => {
+        if (e.estado == "activo") {
+          return <textarea key={i} cols="30" rows="10" defaultValue={e.contenido}></textarea>
+        }
+        
+
+      })}
+
 
     </>
   )
